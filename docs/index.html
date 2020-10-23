@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Enter your details for a free quote to scrap your car! You can find out the value of your scrap car with our instant scrap car quote service, just by entering your car registration, postcode and contact number.">
+  <meta name="keywords" content="Scrap, Vehicle, Motor Vehicle, Cars, Vans, Free Quote">
+  <meta name="author" content="http://kernel-box.com">
+  <meta name="robots" content="index, follow">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta name="twitter:card" content="product">
+  <meta name="twitter:site" content="https://motorscrap.co.uk">
+  <meta name="twitter:title" content="Scrap your vehicles with MotorScrap.">
+  <meta name="twitter:description"
+    content="Enter your details for a free quote to scrap your car! You can find out the value of your scrap car with our instant scrap car quote service, just by entering your car registration, postcode and contact number.">
+  <meta name="twitter:image" content="https://motorscrap.co.uk/assets/scrap.jpg">
+  <meta name="twitter:label1" content="Vehicle Types">
+  <meta name="twitter:data1" content="Any">
+
+  <meta property="og:type" content="business.business">
+  <meta property="og:title" content="MotorScrap">
+  <meta property="og:url" content="https://motorscrap.co.uk">
+  <meta property="og:image" content="https://motorscrap.co.uk/assets/scrap.jpg">
+  <meta property="business:contact_data:street_address" content="N/A">
+  <meta property="business:contact_data:locality" content="London">
+  <meta property="business:contact_data:region" content="N/A">
+  <meta property="business:contact_data:postal_code" content="N/A">
+  <meta property="business:contact_data:country_name" content="United Kingdom">
+  <link rel=icon href="favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <title>MotorScrap</title>
+</head>
+
+<body class="text-black text-center">
+  <div id="navbar" class="bg-white">
+    <nav class="flex flex-wrap items-center justify-between px-2 py-3">
+      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div class="w-full flex justify-between lg:w-auto px-4 lg:static lg:block lg:justify-start">
+          <div class="flex">
+            <img src="./assets/logo.png" alt="MotorScrap Logo" class="w-10 h-10 mr-2">
+            <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase" href="#">
+              MotorScrap
+            </a>
+          </div>
+          <button id="dropdown"
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.879 103.609" class="w-6">
+              <path fill-rule="evenodd"
+                d="M10.368 0h102.144c5.703 0 10.367 4.665 10.367 10.367 0 5.702-4.664 10.368-10.367 10.368H10.368C4.666 20.735 0 16.07 0 10.368 0 4.665 4.666 0 10.368 0zm0 82.875h102.144c5.703 0 10.367 4.665 10.367 10.367 0 5.702-4.664 10.367-10.367 10.367H10.368C4.666 103.609 0 98.944 0 93.242c0-5.702 4.666-10.367 10.368-10.367zm0-41.437h102.144c5.703 0 10.367 4.665 10.367 10.367 0 5.702-4.664 10.368-10.367 10.368H10.368C4.666 62.173 0 57.507 0 51.805s4.666-10.367 10.368-10.367z"
+                clip-rule="evenodd" /></svg>
+          </button>
+          <button id="close-dropdown"
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none hidden"
+            type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.878 122.88" class="w-4">
+              <path
+                d="M1.426 8.313a4.87 4.87 0 016.886-6.886l53.127 53.127 53.127-53.127a4.87 4.87 0 116.887 6.886L68.324 61.439l53.128 53.128a4.87 4.87 0 01-6.887 6.886L61.438 68.326 8.312 121.453a4.868 4.868 0 11-6.886-6.886l53.127-53.128L1.426 8.313z" />
+            </svg>
+          </button>
+        </div>
+        <div id="nav-menu" class="lg:flex flex-grow items-center hidden">
+          <ul class="flex flex-col lg:flex-row list-none ml-auto">
+            <li class="nav-item">
+              <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75"
+                href="#main">
+                Quote
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75"
+                href="#info">
+                Steps
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75"
+                href="#whyus">
+                Why MotorScrap?
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div id="main" class="flex flex-col justify-around items-center">
+    <div class="text-center my-2 lg:w-1/2">
+      <h1 class="text-2xl text-yellow-500 font-bold uppercase lg:text-4xl">Welcome to MotorScrap!</h1>
+      <h2 class="my-2 text-white text-lg lg:text-2xl">Enter your details for a free quote to scrap your car!</h2>
+      <p class="text-white text-lg mt-6 lg:text-2xl">You can find out the value of your scrap car with our instant scrap
+        car
+        quote
+        service, just by entering your
+        car registration, postcode and contact number.</p>
+    </div>
+    <div class="w-11/12 my-6 lg:w-2/6 lg:my-4">
+      <img src="./assets/Towing_car.png" alt="Car being towed">
+    </div>
+    <div class="bg-yellow-500 flex rounded-lg my-2 w-11/12 lg:w-5/12 lg:my-4">
+      <div class="bg-blue-700 w-4/12 flex flex-col rounded-l-lg justify-center items-center">
+        <img src="./assets/EU.png" alt="europe flag">
+        <p class="font-bold text-yellow-500 text-xl lg:text-4xl">GB</p>
+      </div>
+      <form id="userForm" class="flex flex-col flex-wrap py-4 justify-center lg:w-7/12 mx-auto">
+        <input id="vehicleReg" type="text" class="m-2 h-10 rounded shadow-md text-center uppercase font-bold"
+          placeholder="car reg" required>
+        <input id="postCode" type="text" class="m-2 h-10 rounded shadow-md text-center uppercase font-bold"
+          placeholder="postcode" required>
+        <input id="contactNumber" type="text" class="m-2 h-10 rounded shadow-md text-center uppercase font-bold"
+          placeholder="telephone" required>
+        <button id="submit" class="mx-auto my-2 w-9/12 bg-blue-700 rounded text-white p-2 lg:w-3/5 lg:mt-10">Get
+          Quote</button>
+        <div id="status" class="m-auto mt-4 text-lg font-bold"></div>
+      </form>
+    </div>
+  </div>
+  <div id="info" class="flex flex-col">
+    <div class="bg-gray-400 bg-opacity-25 py-12 px-2 flex items-center justify-center text-left">
+      <div class="flex items-center justify-between lg:w-7/12 lg:m-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.86 122.88" class="w-32">
+          <path fill-rule="evenodd"
+            d="M39.62 64.58c-1.46 0-2.64-1.41-2.64-3.14 0-1.74 1.18-3.14 2.64-3.14h34.89c1.46 0 2.64 1.41 2.64 3.14 0 1.74-1.18 3.14-2.64 3.14H39.62zm7.15 52a3.15 3.15 0 110 6.3H7.33c-2.02 0-3.85-.82-5.18-2.15A7.301 7.301 0 010 115.55V7.33c0-2.02.82-3.85 2.15-5.18A7.301 7.301 0 017.33 0h90.02c2.02 0 3.85.83 5.18 2.15a7.301 7.301 0 012.15 5.18v50.14a3.15 3.15 0 11-6.3 0V7.33c0-.28-.12-.54-.31-.72-.19-.19-.44-.31-.72-.31H7.33c-.28 0-.54.12-.73.3-.18.2-.3.45-.3.73v108.21c0 .28.12.54.3.72.19.19.45.31.73.31h39.44v.01zM98.7 74.34c-.51-.49-1.1-.72-1.78-.71-.68.01-1.26.27-1.74.78l-3.91 4.07 10.97 10.59 3.95-4.11c.47-.48.67-1.1.66-1.78-.01-.67-.25-1.28-.73-1.74l-7.42-7.1zm-20.49 39.67c-1.45.46-2.89.94-4.33 1.41-1.45.48-2.89.97-4.33 1.45-3.41 1.12-5.32 1.74-5.72 1.85-.39.12-.16-1.48.7-4.81l2.71-10.45 20.55-21.38 10.96 10.55-20.54 21.38zM39.62 86.95c-1.46 0-2.65-1.43-2.65-3.19s1.19-3.19 2.65-3.19h17.19c1.46 0 2.65 1.43 2.65 3.19s-1.19 3.19-2.65 3.19H39.62zm0-44.69c-1.46 0-2.64-1.41-2.64-3.14 0-1.74 1.18-3.14 2.64-3.14h34.89c1.46 0 2.64 1.41 2.64 3.14 0 1.74-1.18 3.14-2.64 3.14H39.62zm-15.14 37.2a3.72 3.72 0 110 7.44 3.72 3.72 0 110-7.44zm0-22.02a3.72 3.72 0 110 7.44 3.72 3.72 0 110-7.44zm0-22.02a3.72 3.72 0 110 7.44 3.72 3.72 0 110-7.44z" />
+        </svg>
+        <div class="mx-4">
+          <h2 class="text-blue-500 font-bold text-xl my-2">Fill in your details</h2>
+          <p>Fill in the <a href="#" class="font-bold cursor-pointer underline">form</a> above with your car
+            registration and postcode
+            along with your contact details so we can give you your quote.</p>
+        </div>
+      </div>
+    </div>
+    <div class="py-12 px-2 flex items-center justify-center text-left">
+      <div class="flex items-center justify-between lg:w-7/12 lg:m-auto">
+        <div class="mx-4">
+          <h2 class="text-blue-500 font-bold text-xl my-2">Receive your quote</h2>
+          <p>We will be in touch with you shortly after to give you a quote for your scrap car.</p>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 108.5" class="w-32">
+          <path fill-rule="evenodd"
+            d="M41.96 0h38.96c2.97 0 5.65 1.21 7.61 3.16 1.95 1.95 3.16 4.64 3.16 7.61v86.97c0 2.97-1.21 5.65-3.16 7.61a10.733 10.733 0 01-7.61 3.16H41.96c-2.97 0-5.65-1.21-7.61-3.16a10.733 10.733 0 01-3.16-7.61V10.77c0-2.97 1.21-5.65 3.16-7.61A10.75 10.75 0 0141.96 0zM10.99 39.18c1.8-2-1.19-4.76-3.04-2.79l-.03.03c-10.5 11.37-10.55 24.16-.2 35.66l.01.01.03.03c1.91 1.97 4.82-.86 3.03-2.8-9.03-10.07-8.8-20.32.03-29.99a.83.83 0 00.17-.15zm100.9 0c-1.8-2 1.19-4.76 3.04-2.79l.03.03c10.51 11.37 10.56 24.16.21 35.65l-.01.01-.03.03c-1.91 1.97-4.82-.86-3.03-2.8 9.03-10.07 8.8-20.32-.04-29.99a.58.58 0 01-.17-.14zm-8.83 7.04c-1.66-2.12 1.49-4.62 3.17-2.61l.03.04c5.7 6.69 5.95 14.63.54 21.58-1.65 2.16-4.91-.36-3.26-2.51l.01-.02c3.34-4.3 4.35-9.29 1.05-14.04-.48-.67-1.01-1.44-1.54-2.44zm-83.24 0c1.66-2.12-1.49-4.62-3.17-2.61l-.03.04c-5.7 6.69-5.95 14.63-.54 21.58 1.65 2.16 4.91-.36 3.26-2.51l-.01-.02c-3.34-4.3-4.35-9.29-1.05-14.04.48-.67 1.01-1.44 1.54-2.44zm41.62 50.57c2.43 0 4.41 1.98 4.41 4.41s-1.98 4.41-4.41 4.41-4.41-1.98-4.41-4.41a4.41 4.41 0 014.41-4.41zm-27.15-3.38H88.6V13.54H34.29v79.87z" />
+        </svg>
+      </div>
+    </div>
+    <div class="bg-gray-400 bg-opacity-25 py-12 px-2 text-left">
+      <div class="flex items-center justify-between lg:w-7/12 lg:m-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-64">
+          <path
+            d="M365.33 204.94q-2.559 3.051-4.966 5.907a48.157 48.157 0 019.79 2.02zM355.508 240.691a18.467 18.467 0 0117.741 13.447h20.459a38.524 38.524 0 00-76.4 0h20.459a18.466 18.466 0 0117.741-13.447zM390.075 225.111a7675.82 7675.82 0 008.226-11.811l-16.848-27.68a6418.512 6418.512 0 01-9.347 11.222l16.119 26.48a48.773 48.773 0 011.85 1.789z" />
+          <path
+            d="M348.715 254.138H362.3a8.418 8.418 0 00-13.587 0zM26.028 341.738a2.849 2.849 0 00-2.845 2.845V376.8a2.849 2.849 0 002.845 2.845h34.645a55.582 55.582 0 019.063-37.911zM442.826 149.022l-13.2-21.686-1.853 2.248-7.453 9.041 13.9 22.838c2.937-4.242 5.823-8.415 8.606-12.441zM457.649 127.566l-11.977-19.678c-2.8 3.387-5.932 7.182-9.311 11.28l12.689 20.847c3.109-4.499 6.006-8.693 8.599-12.449zM413.155 191.894l-15.623-25.668c-3.116 3.767-6.234 7.532-9.324 11.259l16.332 26.832c2.737-3.945 5.631-8.117 8.615-12.423z" />
+          <circle cx="116.238" cy="372.882" r="6.767" />
+          <path
+            d="M428 170.465l-14.41-23.673c-3.052 3.7-6.167 7.472-9.311 11.278l15.108 24.83c2.844-4.109 5.731-8.277 8.613-12.435zM464.624 365.533v-30.795h-16.592zM384.259 326.894a45.989 45.989 0 1045.988 45.988 46.04 46.04 0 00-45.988-45.988zm0 62.755a16.767 16.767 0 1116.766-16.767 16.786 16.786 0 01-16.766 16.767z" />
+          <circle cx="384.259" cy="372.882" r="6.767" />
+          <path
+            d="M474.624 348.193h14.192v23.611h-14.192zM232.048 264.138v60.6h123.675a55.826 55.826 0 0157.071 0h51.83V300.6l-40.966-36.466zM174.515 194.539h26v51.755h-26zM116.238 326.894a45.989 45.989 0 1045.989 45.988 46.041 46.041 0 00-45.989-45.988zm0 62.755a16.767 16.767 0 1116.767-16.767 16.786 16.786 0 01-16.767 16.767zM164.515 194.539h-28.347l-13.334 51.755h41.681zM486.654 226.2a5 5 0 10-7.372-6.757 18.521 18.521 0 01-14.85 5.972 18.739 18.739 0 01-17.305-17.343 18.447 18.447 0 0110.844-18.04 21.322 21.322 0 0012.653-19.263v-62.244c2.218-4.453 3.143-10.993-1.226-13.807-3.214-2.069-6.662-2.116-10.537-.146a22.2 22.2 0 00-5.763 4.355l-.678.816 8.2 13.478v57.546a11.162 11.162 0 01-6.787 10.157 28.538 28.538 0 009.974 54.469q.908.057 1.81.057a28.426 28.426 0 0021.037-9.25z" />
+          <path
+            d="M222.048 329.738v-70.584c-.071-23.254-.048-53.446-.018-77.154a9 9 0 00-9-9.006h-87.983a8.995 8.995 0 00-8.717 6.764l-18.624 72.6a5 5 0 01-2.332 3.082l-43.6 25.327a25.076 25.076 0 00-12.442 21.617v29.354h38.985A55.846 55.846 0 01132.1 319.2v-62.9h-15.718a5 5 0 01-4.841-6.248l15.91-61.754a5 5 0 014.842-3.753h73.222a5 5 0 015 5V251.3a5 5 0 01-5 5H142.1v66.954a56.032 56.032 0 0130.1 48.546h49.849v-14.607a5 5 0 015-5h84.5l-13.773 25.561a5 5 0 108.8 4.744l25.734-47.76H227.048a5 5 0 01-5-5z" />
+        </svg>
+        <div class="mx-4">
+          <h2 class="text-blue-500 font-bold text-xl my-2">Car Collection</h2>
+          <p>Arrange a free car collection at a time that suits you. You can arrange for
+            your
+            car to be collected from your home or work, saving you time, hassle and money.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="whyus" class="my-6 w-9/12 m-auto py-12 mt-10">
+    <h2 class="text-blue-600 font-bold text-4xl">Why MotorScrap?</h2>
+    <p class="mt-4">Even if your old car is broken, doesn't start, or hasn't passed an MOT, with MotorScrap you can get
+      paid to
+      scrap your car.
+      When you scrap a car with MotorScrap, not only will you get a great price instantly, but we also make it as easy
+      as possible. After you receive a no obligation scrap car quote, you will have the price guaranteed for 3 days to
+      make your mind up. We also help to sort the DVLA paperwork so you're no longer responsible for the car and you
+      avoid any fines.
+
+      MotorScrap are scrap car recyclers who recycle cars to strict standards in line with the law, so you can be
+      assured that your scrap car will be recycled in the right way.</p>
+  </div>
+  <footer id="footer" class="p-2 border-t-2 font-bold uppercase">&#169; 2020 MotorScrap</footer>
+</body>
+
+</html>

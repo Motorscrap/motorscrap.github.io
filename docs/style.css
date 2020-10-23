@@ -1,0 +1,26 @@
+* {
+  scroll-behavior: smooth;
+}
+
+#main {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./assets/scrap.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
+input:focus,
+button:focus {
+  outline: 1px auto #2b6cb0;
+  outline-offset: 0px;
+}
+
+button > svg {
+  pointer-events: none;
+}
+
+@media (min-width: 1280px) {
+  #main {
+    height: calc(100vh - 62px);
+  }
+}
