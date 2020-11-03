@@ -9,7 +9,15 @@ const from = process.env.FROM_EMAIL;
 exports.quote = async (req, res, _next) => {
   if (!req.body) return res.status(400);
 
-  let { subject, contactNumber, vehicleReg, postCode } = req.body;
+  let {
+    subject,
+    contactNumber,
+    vehicleReg,
+    postCode,
+    mileage,
+    starts,
+    drives
+  } = req.body;
 
   const msg = {
     to,
@@ -18,7 +26,10 @@ exports.quote = async (req, res, _next) => {
     text: `
       Contact Number: ${contactNumber}\n
       Vehicle Registration: ${vehicleReg}\n
-      Postal code: ${postCode}`
+      Postal code: ${postCode}\n
+      Mileage: ${mileage}\n
+      ${starts}\n
+      ${drives}`
   };
 
   try {
