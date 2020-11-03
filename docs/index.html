@@ -38,6 +38,16 @@
   <link rel="stylesheet" href="style.css">
   <script src="index.js"></script>
   <title>MotorScrap</title>
+  <!-- Global site tag (gtag.js) - Google Ads: 514803431 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-514803431"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-514803431');
+  </script>
+
 </head>
 
 <body class="text-black text-center">
@@ -111,13 +121,29 @@
         <img src="./assets/EU.png" alt="europe flag">
         <p class="font-bold text-yellow-500 text-xl lg:text-4xl">GB</p>
       </div>
-      <form id="userForm" class="flex flex-col flex-wrap py-4 justify-center lg:w-7/12 mx-auto">
-        <input id="vehicleReg" type="text" class="m-2 h-10 rounded shadow-md text-center uppercase font-bold"
+      <form id="userForm" class="flex flex-col flex-wrap py-4 justify-center md:w-7/12 mx-auto">
+        <input id="vehicleReg" type="text"
+          class="m-2 h-10 rounded shadow-md text-center uppercase font-bold focus:outline-none focus:border-4"
           placeholder="car reg" required>
-        <input id="postCode" type="text" class="m-2 h-10 rounded shadow-md text-center uppercase font-bold"
+        <input id="postCode" type="text"
+          class="m-2 h-10 rounded shadow-md text-center uppercase font-bold focus:outline-none focus:border-4"
           placeholder="postcode" required>
-        <input id="contactNumber" type="text" class="m-2 h-10 rounded shadow-md text-center uppercase font-bold"
+        <input id="contactNumber" type="text"
+          class="m-2 h-10 rounded shadow-md text-center uppercase font-bold focus:outline-none focus:border-4"
           placeholder="telephone" required>
+        <input id="mileage" type="text"
+          class="m-2 h-10 rounded shadow-md text-center uppercase font-bold focus:outline-none focus:border-4"
+          placeholder="mileage" required>
+        <div class="m-2 flex flex-col items-center justify-between md:flex-row">
+          <div class="my-2">
+            <label for="starts">Does your vehicle start?</label>
+            <input id="starts" type="checkbox" class="mx-2">
+          </div>
+          <div class="my-2">
+            <label for="drives">Is your vehicle drivable?</label>
+            <input id="drives" type="checkbox" class="mx-2">
+          </div>
+        </div>
         <button id="submit" class="mx-auto my-2 w-9/12 bg-blue-700 rounded text-white p-2 lg:w-3/5 lg:mt-10">Get
           Quote</button>
         <div id="status" class="m-auto mt-4 text-lg font-bold"></div>
@@ -190,6 +216,19 @@
       assured that your scrap car will be recycled in the right way.</p>
   </div>
   <footer id="footer" class="p-2 border-t-2 font-bold uppercase">&#169; 2020 MotorScrap</footer>
+  <script>
+    window.addEventListener('load', function () {
+      try {
+        var set_int = setInterval(function () {
+          if (document.querySelector('#status').innerText == "Submitted successfully. Thank you!") {
+            gtag('event', 'conversion', { 'send_to': 'AW-514803431/6m_FCOuSh-YBEOeNvfUB' });
+            clearInterval(set_int);
+          }
+        }, 1000);
+      }
+      catch (err) { }
+    })
+  </script>
 </body>
 
 </html>

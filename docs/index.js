@@ -56,14 +56,27 @@ const submit = function (e) {
   let contactNumber = document.getElementById("contactNumber").value;
   let vehicleReg = document.getElementById("vehicleReg").value;
   let postCode = document.getElementById("postCode").value;
+  let mileage = document.getElementById("mileage").value;
+  let starts = document.getElementById("starts").checked;
+  let drives = document.getElementById("drives").checked;
 
-  if (!contactNumber || !vehicleReg || !postCode) return;
+  if (!contactNumber || !vehicleReg || !postCode || !mileage) return;
+
+  console.log(starts, drives);
+
+  starts = starts ? "The vehicle starts" : "The vehicle does not start";
+  drives = drives ? "The vehicle is drivable" : "The vehicle is not drivable";
+
+  console.log(starts, drives);
 
   let body = JSON.stringify({
     subject: "Quote",
     contactNumber,
     vehicleReg,
-    postCode
+    postCode,
+    mileage,
+    starts,
+    drives
   });
 
   e.preventDefault();
@@ -85,7 +98,8 @@ const submit = function (e) {
     .then((res) => res.json() || res)
     .then((data) => {
       if (data.success) {
-        status.textContent = "Your quote was submitted successfully. Thank you!";
+        status.textContent =
+          "Submitted successfully. Thank you!";
         status.classList.add("text-green-500");
         document.getElementById(document.forms[0].id).reset();
         return;
